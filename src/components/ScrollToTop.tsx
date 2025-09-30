@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 const SCROLL_THRESHOLD = 700;
 
-const ScrollToTop =()=> {
+const ScrollToTop = () => {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -28,19 +28,17 @@ const ScrollToTop =()=> {
 
   return (
     <div
-      className={`fixed bottom-8 right-8 z-50 duration-300 ${
-        visible ? "opacity-100 translate-0" : "opacity-0 translate-y-10 pointer-events-none"
-      } `}
+      className={`fixed bottom-8 right-8 z-50 duration-300 ${visible ? "opacity-100 translate-0" : "opacity-0 translate-y-10 pointer-events-none"} `}
     >
       <button
         aria-label="Scroll to top"
         onClick={handleClick}
         className="w-11 h-11 rounded-full shadow-lg bg-purple-600 hover:!bg-purple-900 transition-colors p-2 cursor-pointer active:scale-75"
       >
-        <img src="/images/up-arrow.png" alt="up-arrow" aria-hidden="true" />
+        <img src="/images/up-arrow.webp" alt="up-arrow" aria-hidden="true" />
       </button>
     </div>
   );
-}
+};
 
-export default ScrollToTop
+export default ScrollToTop;

@@ -10,12 +10,12 @@ const Menu = () => {
     gsap.fromTo("#title", { opacity: 0 }, { opacity: 1, duration: 1 });
     gsap.fromTo(
       ".cocktail img",
-      { opacity: 0, xPercent: -100,scale:0.7 },
+      { opacity: 0, xPercent: -100, scale: 0.7 },
       {
         xPercent: 0,
         opacity: 1,
         duration: 1,
-        scale:1,
+        scale: 1,
         ease: "power1.inOut",
       }
     );
@@ -47,8 +47,8 @@ const Menu = () => {
 
   return (
     <section id="menu" aria-labelledby="menu-heading">
-      <img src="/images/slider-left-leaf.png" alt="left-leaf" id="m-left-leaf" />
-      <img src="/images/slider-right-leaf.png" alt="right-leaf" id="m-right-leaf" />
+      <img src="/images/slider-left-leaf.webp" alt="left-leaf" id="m-left-leaf" />
+      <img src="/images/slider-right-leaf.webp" alt="right-leaf" id="m-right-leaf" />
       <h2 id="menu-heading" className="sr-only">
         Cocktail Menu
       </h2>
@@ -71,11 +71,11 @@ const Menu = () => {
         <div className="arrows">
           <button className="text-left prevBtn" onClick={() => goToSlide(currentIndex - 1)}>
             <span>{prevCocktail.name}</span>
-            <img src="/images/right-arrow.png" alt="right-arrow" aria-hidden="true" />
+            <img src="/images/right-arrow.webp" alt="right-arrow" aria-hidden="true" />
           </button>
           <button className="text-left nextBtn" onClick={() => goToSlide(currentIndex + 1)}>
             <span>{nextCocktail.name}</span>
-            <img src="/images/left-arrow.png" alt="left-arrow" aria-hidden="true" />
+            <img src="/images/left-arrow.webp" alt="left-arrow" aria-hidden="true" />
           </button>
         </div>
         <div className="cocktail">
