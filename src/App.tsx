@@ -15,6 +15,7 @@ const App = () => {
       <Art />
       <Menu />
       <Contact />
+      <ScrollToTop />
     </main>
   );
 };
