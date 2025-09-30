@@ -1,8 +1,7 @@
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger, SplitText } from "gsap/all";
-import Navbar from "./sections/Navbar";
-import Hero from "./sections/Hero";
+import { Navbar, Hero, Cocktails, About, Art, Menu, Contact, ScrollToTop } from "./components";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger, SplitText);
 const App = () => {
